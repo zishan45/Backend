@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Learning backend development with Node.js, Express.js, MongoDB, REST APIs, authentication, and server-side development.\r # Backend Development Learning Repository",
+  "homepage": "https://github.com/zishan45/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/zishan45/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zishan45/Backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
