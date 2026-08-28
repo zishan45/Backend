@@ -17,11 +17,19 @@ app.get("/rolldice", (req, res) => {
     res.render("rolldice.ejs");
 });
 
+// app.get("/instagram/:username", (req, res) => {
+//     let {username} = req.params;
+//     let followers = ["rohit", "kohli", "jadeja", "rahul", "bumrah"];
+//     res.render("instagram.ejs", {username, followers});
+// });
+
 app.get("/instagram/:username", (req, res) => {
     let {username} = req.params;
-    let followers = ["rohit", "kohli", "jadeja", "rahul", "bumrah"];
-    res.render("instagram.ejs", {username, followers});
-
+    let data = instaData[username];
+    const instaData = require("./DataTransfer.json");
+    console.log(data);
+    
+    res.render("instagram.ejs", { data });
 });
 
 app.listen(port, () => {
