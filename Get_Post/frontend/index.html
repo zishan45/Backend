@@ -6,17 +6,17 @@
     <title>Get & Post</title>
 </head>
 <body>
-    <form method="get" action="/register">
+    <form method="get" action="http://localhost:3000/register">
        <h2>Get Request Form</h2>
-       <input placeholder="username" type="text" />
-       <input placeholder="password" type="password" />
+       <input name="user" placeholder="username" type="text" />
+       <input name="password" placeholder="password" type="password" />
        <button> Submit </button>
     </form>
 
-    <form method="post" action="/register">
+    <form method="post" action="http://localhost:3000/register">
         <h2>Post Request Form</h2>
-        <input placeholder="username" type="text" />
-       <input placeholder="password" type="password" />
+        <input name="user" placeholder="username" type="text" />
+       <input name="password" placeholder="password" type="password" />
        <button> Submit </button>
     </form>
 </body>
